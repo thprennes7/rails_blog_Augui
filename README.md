@@ -1,24 +1,27 @@
-# README
+# Rails Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![oggy](https://media.giphy.com/media/9uIms7t4Zb27xcKaiu/giphy.gif)
 
-Things you may want to cover:
+Création d'une application base de données pour un blog en ligne. Pour cela nous avons créer cinq tables :
+    * User
+    * Article
+    * Category
+    * Comment
+    * Like
 
-* Ruby version
+    Pour récupérer notre app rien de plus simple:
+<pre><code> $ git clone https://github.com/thprennes7/rails_blog_Augui</code></pre>
 
-* System dependencies
+<pre><code> $ Bundle install</code></pre>
 
-* Configuration
+Pour te facilité la tâche, tu peux faire des fakes random, pour cela:  
+<pre><code> $ rails db:seed </code></pre>
 
-* Database creation
+Et voila ta base de donnée est rempli
 
-* Database initialization
+![danse](https://media.giphy.com/media/3oz8xPzHi7P2hVyVMs/giphy.gif)
 
-* How to run the test suite
+Maintenant, on te laisse checker comme un grand et on attends ton appel.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+Made by Guillaume et Aurélien.
