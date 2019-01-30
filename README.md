@@ -3,11 +3,11 @@
 ![oggy](https://media.giphy.com/media/9uIms7t4Zb27xcKaiu/giphy.gif)
 
 Création d'une application base de données pour un blog en ligne. Pour cela nous avons créer cinq tables :
-    * User
-    * Article
-    * Category
-    * Comment
-    * Like
+  * User
+  * Article
+  * Category
+  * Comment
+  * Like
 
     Pour récupérer notre app rien de plus simple:
 <pre><code> $ git clone https://github.com/thprennes7/rails_blog_Augui</code></pre>
