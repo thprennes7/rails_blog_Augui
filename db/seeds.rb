@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
-
-User.destroy_all
-Category.destroy_all
-Article.destroy_all
-Comment.destroy_all
 Like.destroy_all
+Comment.destroy_all
+Article.destroy_all
+Category.destroy_all
+User.destroy_all
+
 
 15.times do
   user = User.create!(first_name: Faker::Name.name, last_name: Faker::Name.name, email: Faker::Internet.email)
@@ -23,13 +23,13 @@ end
 end
 
 15.times do |index|
-  Article.create!(title: Faker::FunnyName.name, content: Faker::ChuckNorris.fact, user_id: (index + 1), category_id: (rand(4) + 1))
+  Article.create!(title: Faker::FunnyName.name, content: Faker::ChuckNorris.fact, user_id: User.first.id.to_i + index, category_id: Category.first.id.to_i + rand(4))
 end
 
 15.times do |index|
-  Comment.create!(content: Faker::ChuckNorris.fact, user_id: (index + 1), article_id: (index + 1))
+  Comment.create!(content: Faker::ChuckNorris.fact, user_id: User.first.id.to_i + index, article_id: Article.first.id.to_i + index)
 end
 
 15.times do |index|
-  Like.create!(user_id: (index + 1), article_id: (index + 1))
+  Like.create!(user_id: User.first.id.to_i + index, article_id: Article.first.id.to_i + index)
 end
