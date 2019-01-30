@@ -8,6 +8,12 @@
 
 require 'faker'
 
+User.destroy_all
+Category.destroy_all
+Article.destroy_all
+Comment.destroy_all
+Like.destroy_all
+
 15.times do
   user = User.create!(first_name: Faker::Name.name, last_name: Faker::Name.name, email: Faker::Internet.email)
 end
@@ -17,13 +23,13 @@ end
 end
 
 15.times do |index|
-  Article.create!(title: Faker::FunnyName.name, content: Faker::ChuckNorris.fact, user_id: index + 1, category_id: rand(5))
+  Article.create!(title: Faker::FunnyName.name, content: Faker::ChuckNorris.fact, user_id: (index + 1), category_id: (rand(4) + 1))
 end
 
 15.times do |index|
-  Comment.create!(content: Faker::ChuckNorris.fact, user_id: index + 1, article_id: index + 1)
+  Comment.create!(content: Faker::ChuckNorris.fact, user_id: (index + 1), article_id: (index + 1))
 end
 
 15.times do |index|
-  Like.create!(user_id: index + 1, article_id: index + 1)
+  Like.create!(user_id: (index + 1), article_id: (index + 1))
 end
