@@ -9,7 +9,7 @@ Création d'une application base de données pour un blog en ligne. Pour cela no
   * Comment
   * Like
 
-    Pour récupérer notre app rien de plus simple:
+Pour récupérer notre app rien de plus simple:
 <pre><code> $ git clone https://github.com/thprennes7/rails_blog_Augui</code></pre>
 
 <pre><code> $ Bundle install</code></pre>
