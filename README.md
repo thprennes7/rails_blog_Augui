@@ -1,6 +1,6 @@
 # Rails Blog
 
-![oggy](https://media.giphy.com/media/9uIms7t4Zb27xcKaiu/giphy.gif)
+![oggy](https://media.giphy.com/media/55cX2zvcUP1vMlNIMF/giphy.gif)
 
 Création d'une application base de données pour un blog en ligne. Pour cela nous avons créer cinq tables :
   * User
